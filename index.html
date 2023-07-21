@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    
+    <div class="mainContainer">
+
+        <header class="head1" >
+            <div class="display head1display ">
+                <h1 class="head2">Task <span>List</span> </h1>
+                <div class=" back">
+                    <button class="backBtn " onclick="back()"><img src="./back (1).png" alt="img" height="30px" width="30px" class="backButtons1"> </button>
+                    <h2   onclick="back()"><span class="backText" onclick="back()">BACK</span></h2>
+                </div>
+                <div class="head2Text"></div>
+                <div class="display addBtn"  >
+                    <button class="btn1 "onclick="addPopup()" > +</button>
+                    <h2  onclick="addPopup()"><span class="backText"> Add Item</span></h2>
+    
+                </div>
+                
+            </div>
+            <div class="checkItem">No Items in the todo List</div>
+            <div class="todos" id="todos" ></div>
+        </header>
+
+
+
+        <section>
+            <div class="addTask display">
+                <div class="adt"> ADD NEW TASK</div>
+                <input class="cardText" type="text" placeholder="Add New Task"   >
+                <div class="buttons">
+                    <button class="btn2 addBtn1" onclick="addTask()">Add</button>
+                    <button class="btn2 closeBtn1" onclick="closeTask()">Close</button>
+    
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section >
+            <div class=" display addItem">
+                <div class="adt"> ADD NEW ITEM</div>
+                <input class="cardItem" type="text" placeholder="Add New Item"  >
+                <div class="display">
+                    <button id="addBtn2" class="btn2 addBtn2" onclick="addItem()"  >Add</button>
+                    <button class="btn2 closeBtn2" onclick="closeItem()" >Close</button>
+    
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

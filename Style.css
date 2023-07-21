@@ -1,0 +1,333 @@
+*{
+    font-style: italic;
+}
+
+body{
+    background-color: black;
+}
+.mainContainer{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    
+
+}
+
+h1{
+    font-size: 50px;
+    
+}
+header{
+    padding: 20px;    
+}
+.head2Text{
+    font-size: 40px;
+    display: none;
+    position: relative;
+    left: 35px;
+
+}
+
+.display{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn1{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #11009E;
+    background-color: green;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.backBtn{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.checkItem{
+    width: 290px;
+    font-size: 25px;
+    font-weight: bolder;
+    position: relative;
+    left: 320px;
+    margin-top: 40px;
+}
+.adt{
+    color: orangered;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+.back{
+    display: none;
+}
+input{
+    width: 300px;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid orangered;
+    border-radius:4px ;
+    box-shadow: 1px 1px 4px 2px gray;
+}
+.addTask{
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    top: 30vh;
+    left: 40vw;
+    z-index: 1;
+}
+.addItem{
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    top: 30vh;
+    left: 40vw;
+    z-index: 1;
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: aqua;
+    color: white;
+    font-size: large;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 10px ;
+    box-sizing: border-box;
+}
+.blur{
+    filter: blur(20px);
+}
+.todos{
+    width: 950px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 280px;
+    top:60px;
+   background-color: black;
+}
+
+.todoscard{
+    width: 220px;
+    height: 350px;
+    background-color: #FFF4F4;
+    color: #EA906C;
+    font-size: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border:1px solid orangered;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    
+}
+.addCardBtn1{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    /* background-color: #EA906C; */
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    position: relative;
+    top: 210px;
+    left: 55px;
+    z-index: 1;
+}
+.line{
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    margin: 20px 0px;
+    font-size: 25px;
+    font-weight: bold;
+    overflow-wrap:break-word ;
+}
+.addCardBtn2{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    /* background-color: #068DA9; */
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    position: relative;
+    top: 210px;
+    left: 60px;
+    z-index: 1;
+    
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -30px;
+    height: 200px;
+    overflow-y: auto ;
+    overflow-x: hidden;
+    
+    
+}
+.mainDiv::-webkit-scrollbar{
+    
+    margin-top: 20px;
+}
+.itemDiv{
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+   margin-bottom: 10px;
+    
+}
+.itemText{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 80px;
+    margin-right: 2px;
+    margin-top: 4px;
+    text-align: left;
+    overflow-wrap:break-word ;
+
+}
+.itemButton{
+    background-color: aqua;
+    border: 2px solid white;
+    color: #000000;
+    border-radius: 2px;
+    width: 80px;
+    height: 30px;
+   margin-left: 10px;
+}
+
+.para{
+    width: 70px;
+    color: white;
+    display: inline-block;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media only screen and (max-width: 500px) and (min-Width : 350px){
+   .mainContainer{
+    text-align: center;
+   
+   }
+    .todos{
+        display: block;
+        width: 85%;
+        left: 55px;
+        margin-top: 20px;
+        
+    }
+    h1{
+        margin: 20px 0;
+    }
+
+    .addBtn{
+       
+        width: 60px;
+        position: relative;
+        left: 25px;
+        top: 20px;
+    }
+    .checkItem{
+        font-size: 20px;
+        font-weight: bolder;
+        position: relative;
+        margin-top: 20px;
+        left: 50px;
+        width: 220px;
+    }
+    .addTask{
+        position: absolute;
+        width: 90%;
+        left:20px;
+        top: 300px;
+    }
+    .cardText{
+        margin-left: 0px;
+        width: 280px;
+    }
+    .addItem{
+        position: absolute;
+        width: 90%;
+        left:20px;
+        top: 300px;
+    }
+    .cardItem{
+        margin-left: 0px;
+        width: 280px;
+
+    }
+    .backText{
+        display: none;
+    }
+    .head1display{
+        display: flex;
+    }
+    .head2{
+        display: flex;
+        width: 310px;
+        padding: 20px 20px 0px;
+    }
+    
+        
+    
+    .btn1{
+        width: 40px;
+        height: 40px;
+        margin-right: 30px;
+        
+    }
+    .back{
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        
+    }
+    .head2Text{
+        position: relative;
+        left: 10px;
+        top: 30px;
+    }
+
+}
